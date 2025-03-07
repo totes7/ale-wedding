@@ -3,4 +3,31 @@
 
 @import "tailwindcss";
 
+@theme {
+    --color-primary: #F7E4D6;
+    --color-secondary: #9F3E2E;
 
+}
+
+@layer base {
+    body {
+        font-optical-sizing: auto;
+        background: var(--color-primary);
+    }
+}
+
+.menu-icon {
+    @apply lg:hidden absolute top-0 right-0 transform -translate-x-full translate-y-1/3 text-[1.8rem] cursor-pointer;
+}
+
+.fa-bars {
+    @apply text-gray-200;
+}
+
+.fa-times {
+    @apply text-gray-200 text-[2rem];
+}
+
+.logo {
+    @apply block h-[60px] absolute left-90;
+}
