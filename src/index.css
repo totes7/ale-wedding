@@ -9,11 +9,14 @@
 
 }
 
-@layer base {
-    body {
-        font-optical-sizing: auto;
-        background: var(--color-primary);
-    }
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+    -ms-overflow-style: none;
 }
 
 .menu-icon {
@@ -21,13 +24,19 @@
 }
 
 .fa-bars {
-    @apply text-gray-200;
+    @apply text-secondary;
 }
 
 .fa-times {
-    @apply text-gray-200 text-[2rem];
+    @apply text-secondary text-[2rem];
 }
 
 .logo {
     @apply block h-[60px] absolute left-90;
 }
+
+@utility border-b {
+    border-bottom: solid 5px var(--color-secondary);
+}
+
+
