@@ -11,15 +11,15 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className="z-1 bg-transparent text-secondary fixed w-full">
+            <nav className="z-1 bg-primary text-secondary fixed w-full">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-24">
                         <div className="flex flex-row w-full justify-around">
-                            <div className="text-3xl font-[Caprasimo]">
+                            <div className="text-5xl font-[Caprasimo]">
                                 <Link to="/">A&M</Link>
                             </div>
                             <div className="hidden lg:block">
-                                <div className="flex font-[Roboto] text-xl ml-6 items-baseline space-x-8">
+                                <div className="flex font-[Roboto] text-xl pt-3 ml-6 items-baseline space-x-8">
                                     <Link className="hover:border-b" to="/">Home</Link>
                                     <Link className="hover:border-b" to="/">RSVP</Link>
                                     <Link className="hover:border-b" to="/">Info</Link>

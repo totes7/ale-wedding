@@ -2,9 +2,8 @@ import Hero from "./Hero.jsx";
 
 const Home = () => {
     return (
-        <div>
-            <Hero />
-
+        <div className="flex flex-col items-center h-full w-full">
+            <div className="overlay"></div>
         </div>
 
     )
