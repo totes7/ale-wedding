@@ -11,34 +11,33 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className="z-1 bg-primary text-secondary fixed w-full">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-between h-24">
-                        <div className="flex flex-row w-full justify-around">
-                            <div className="text-5xl font-[Caprasimo]">
+            <nav className="navbar">
+                <div className="container">
+                    <div className="navbar-inner">
+                        <div className="navbar-content">
+                            <div className="logo">
                                 <Link to="/">A&M</Link>
                             </div>
-                            <div className="hidden lg:block">
-                                <div className="flex font-[Roboto] text-xl pt-3 ml-6 items-baseline space-x-8">
-                                    <Link className="hover:border-b" to="/">Home</Link>
-                                    <Link className="hover:border-b" to="/">RSVP</Link>
-                                    <Link className="hover:border-b" to="/">Info</Link>
-                                </div>
+                            <div className="nav-links">
+                                <Link to="/">Home</Link>
+                                <Link to="/">RSVP</Link>
+                                <Link to="/">Info</Link>
+                                <Link to="/">Regalo</Link>
                             </div>
                         </div>
-                        <div className="menu-icon" onClick={() => {handleClick(); handleClose()}}>
+                        <div className="menu-icon" onClick={() => { handleClick(); handleClose(); }}>
                             <i className={click ? "fas fa-times" : "fas fa-bars"} />
                         </div>
                     </div>
                 </div>
-
-                {
-                    isOpen && (
-                        <div className="flex flex-col bg-secondary text-primary gap-y-2 lg:hidden px-4 sm:px-6 pb-2">
-                            Links
-                        </div>
-                    )
-                }
+                {isOpen && (
+                    <div className="mobile-menu">
+                        <Link to="/">Home</Link>
+                        <Link to="/">RSVP</Link>
+                        <Link to="/">Info</Link>
+                        <Link to="/">Regalo</Link>
+                    </div>
+                )}
             </nav>
         </>
     )
