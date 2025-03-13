@@ -118,7 +118,7 @@ body {
 
 .overlay-container {
     background-color: white;
-    height: 950px;
+    height: 1100px;
     width: 850px;
     margin: 10% 0;
     display: flex;
@@ -178,8 +178,8 @@ svg {
 }
 
 .overlay-content h1 {
-    font-size: 40px;
-    margin-bottom: 30%;
+    font-size: 45px;
+    margin-bottom: 40%;
 }
 
 .overlay-content h2 {
@@ -190,14 +190,14 @@ svg {
 .overlay-content p {
     font-family: 'Roboto', sans-serif;
     margin-top: 5%;
-    font-size: 26px;
+    font-size: 28px;
     text-transform: uppercase;
 }
 
 .logo {
     z-index: 0;
     position: absolute;
-    top: 15%;
+    top: 17%;
     left: 5%;
     height: 30%;
 }
