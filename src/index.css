@@ -71,7 +71,6 @@ body::-webkit-scrollbar {
 /* Hide scrollbar for IE and Edge */
 body {
     -ms-overflow-style: none;
-    background-color: #9F3E2E;
 }
 
 
@@ -82,7 +81,7 @@ body {
     width: 100%;
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    z-index: 1;
+    z-index: 999;
 }
 
 .container {
@@ -105,31 +104,32 @@ body {
     align-items: center;
 }
 
-.logo {
+.nav-logo {
     font-size: 3rem;
     font-family: 'Caprasimo', cursive;
 }
 
-.logo a {
+.nav-logo a {
     text-decoration: none;
     color: var(--color-secondary);
 }
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
-    margin-left: 24px;
+    margin-left: 28px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: inherit;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-    border-bottom: 5px solid currentColor;
+    transform: scale(1.1);
 }
 
 .menu-icon {
@@ -145,7 +145,103 @@ body {
     gap: 8px;
 }
 
+/* Home */
+
+.home {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.overlay {
+    background-color: var(--color-primary);
+    height: 80%;
+    width: 40%;
+    padding: 10% 0;
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 9999px; /* Ensures a fully rounded corner */
+    border-top-right-radius: 9999px;
+    position: relative;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding: 5% 0;
+    color: var(--color-secondary);
+}
+
+.overlay-content h1 {
+    font-family: 'Caprasimo', cursive;
+    font-size: 40px;
+    margin-bottom: 10%;
+}
+
+.overlay-content h2 {
+    font-family: 'Caprasimo', cursive;
+    margin: 15% 0 5%;
+}
+
+.overlay-content p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.logo {
+    z-index: 0;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 50%;
+}
+
+.circles {
+    width: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    transition: transform 1s;
+}
+
+.circle:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.circle h2 {
+    font-family: 'Caprasimo', cursive;
+    margin-top: 15%;
+}
+
+/* Media Queries */
+
 @media (max-width: 960px) {
+
+    /* Navbar */
+
     .nav-links {
         display: none;
     }
