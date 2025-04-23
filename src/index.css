@@ -91,19 +91,6 @@ body {
   transform: scale(1.1);
 }
 
-.menu-icon {
-  display: none;
-}
-
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  padding: 16px;
-  gap: 8px;
-}
-
 /* Home */
 
 .home {
@@ -252,55 +239,62 @@ svg {
 }
 
 .contact-form > input[type="submit"] {
-    width: 40%;
-    margin: 5%;
-    padding: 1%;
-    font-size: 24px;
-    border-radius: 5px;
-    font-family: "Caprasimo", cursive;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-  }
-  
-  .contact-form > input[type="submit"]:hover {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    cursor: pointer;
-  }
+  width: 40%;
+  margin: 5%;
+  padding: 1%;
+  font-size: 24px;
+  border-radius: 5px;
+  font-family: "Caprasimo", cursive;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.contact-form > input[type="submit"]:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  cursor: pointer;
+}
 
 /* Media Queries */
 
 @media (max-width: 960px) {
   /* Navbar */
 
-  .nav-links {
-    display: none;
-  }
-
-  .mobile-menu {
+  .navbar-inner {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
   }
 
-  .mobile-menu a {
-    font-family: "Roboto", sans-serif;
-    text-decoration: none;
-    color: inherit;
-    margin-top: 10%;
-    font-size: 1.25rem;
-    text-align: center;
+  .navbar-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .mobile-menu a:hover {
-    border-bottom: 5px solid currentColor;
+  .nav-logo {
+    margin: 5%;
   }
+}
 
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 15%;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
+@media (max-width: 760px) {
+    .navbar-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+      }
+
+      .navbar-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
 }

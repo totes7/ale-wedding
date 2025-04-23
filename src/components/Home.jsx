@@ -59,42 +59,8 @@ const Home = () => {
                 <Link to="/">Regalo</Link>
               </div>
             </div>
-            <div
-              className="menu-icon"
-              onClick={() => {
-                handleClick();
-                handleClose();
-              }}
-            >
-              <i className={click ? "fas fa-times" : "fas fa-bars"} />
-            </div>
           </div>
         </div>
-        {isOpen && (
-          <div className="mobile-menu">
-            <Link
-              to="#rsvp"
-              scroll={(el) => scrollWithOffset(el)}
-              onClick={handleClose}
-            >
-              RSVP
-            </Link>
-            <Link
-              to="/"
-              scroll={(el) => scrollWithOffset(el)}
-              onClick={handleClose}
-            >
-              Info
-            </Link>
-            <Link
-              to="/"
-              scroll={(el) => scrollWithOffset(el)}
-              onClick={handleClose}
-            >
-              Regalo
-            </Link>
-          </div>
-        )}
       </nav>
 
       <div className="home">
