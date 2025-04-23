@@ -1,15 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import logo from "../assets/logo-ale.png";
-// import Contact from "./Contact";
+import emailjs from "@emailjs/browser";
 
 const Home = () => {
-  const [click, setClick] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleClick = () => setClick(!click);
-  const handleClose = () => setIsOpen(!isOpen);
 
   const form = useRef();
 
@@ -44,6 +39,7 @@ const Home = () => {
 
   return (
     <Router>
+        {/* NAVBAR */}
       <nav className="navbar">
         <div className="container">
           <div className="navbar-inner">
@@ -63,6 +59,7 @@ const Home = () => {
         </div>
       </nav>
 
+        {/* HERO SECTION */}
       <div className="home">
         <div className="overlay-container">
           <svg>
@@ -88,6 +85,7 @@ const Home = () => {
         </div>
       </div>
 
+        {/* RSVP FORM */}
       <div className="contact-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <h1 id="rsvp">RSVP</h1>
@@ -128,7 +126,6 @@ const Home = () => {
         </form>
       </div>
 
-      {/*<Footer />*/}
     </Router>
   );
 };
