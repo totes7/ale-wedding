@@ -19,7 +19,6 @@ const NavBar = () => {
                                 <Link to="/">M&A</Link>
                             </div>
                             <div className="nav-links text-r">
-                                <Link to="/">Home</Link>
                                 <Link to="/">RSVP</Link>
                                 <Link to="/">Info</Link>
                                 <Link to="/">Regalo</Link>
@@ -32,7 +31,6 @@ const NavBar = () => {
                 </div>
                 {isOpen && (
                     <div className="mobile-menu">
-                        <Link to="/">Home</Link>
                         <Link to="/">RSVP</Link>
                         <Link to="/">Info</Link>
                         <Link to="/">Regalo</Link>
