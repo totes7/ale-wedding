@@ -206,8 +206,9 @@ svg {
   color: var(--color-secondary);
 }
 
-.contact-container h2 {
-  font-size: 30px;
+.contact-container p {
+  font-size: 25px;
+  text-align: center;
   margin: 5%;
   font-family: "Caprasimo", cursive;
   color: var(--color-secondary);
@@ -232,8 +233,8 @@ svg {
 .contact-form > input {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
+  margin: 20px 0;
+  border: 1px solid var(--color-secondary);
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -252,6 +253,80 @@ svg {
 .contact-form > input[type="submit"]:hover {
   background-color: var(--color-primary);
   color: var(--color-secondary);
+  cursor: pointer;
+}
+
+/* Info */
+
+.info {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.info h1 {
+  font-size: 60px;
+  margin: 5% 0 0 0;
+  font-family: "Caprasimo", cursive;
+  color: var(--color-primary);
+}
+
+.info h3 {
+  font-size: 35px;
+  font-family: "Caprasimo", cursive;
+  color: var(--color-primary);
+}
+
+.info p {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 5%;
+}
+
+.info-card {
+  background-color: var(--color-primary);
+  width: 30%;
+  height: 400px;
+  margin: 2%;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+.info-card h2 {
+  font-size: 30px;
+  margin: 5% 0;
+}
+
+.info-card button {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10%;
+}
+.info-card button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
   cursor: pointer;
 }
 
@@ -282,19 +357,19 @@ svg {
 }
 
 @media (max-width: 760px) {
-    .navbar-inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 140px;
-      }
+  .navbar-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+  }
 
-      .navbar-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-      }
+  .navbar-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

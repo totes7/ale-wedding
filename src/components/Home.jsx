@@ -5,7 +5,6 @@ import logo from "../assets/logo-ale.png";
 import emailjs from "@emailjs/browser";
 
 const Home = () => {
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -39,7 +38,7 @@ const Home = () => {
 
   return (
     <Router>
-        {/* NAVBAR */}
+      {/* NAVBAR */}
       <nav className="navbar">
         <div className="container">
           <div className="navbar-inner">
@@ -51,7 +50,9 @@ const Home = () => {
                 <Link to="#rsvp" scroll={(el) => scrollWithOffset(el)}>
                   RSVP
                 </Link>
-                <Link to="/">Info</Link>
+                <Link to="#info" scroll={(el) => scrollWithOffset(el)}>
+                  Info
+                </Link>
                 <Link to="/">Regalo</Link>
               </div>
             </div>
@@ -59,7 +60,7 @@ const Home = () => {
         </div>
       </nav>
 
-        {/* HERO SECTION */}
+      {/* HERO SECTION */}
       <div className="home">
         <div className="overlay-container">
           <svg>
@@ -85,18 +86,22 @@ const Home = () => {
         </div>
       </div>
 
-        {/* RSVP FORM */}
+      {/* RSVP FORM */}
       <div className="contact-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <h1 id="rsvp">RSVP</h1>
 
-          <h2>Invitato #1</h2>
+          <p>
+            Compila il modulo per farci sapere se parteciperai al nostro
+            matrimonio
+          </p>
+
           <label htmlFor="">Nome</label>
-          <input type="text" name="name1" id="" placeholder="Nome" required />
+          <input type="text" name="name" id="" placeholder="Nome" required />
           <label htmlFor="">Cognome</label>
           <input
             type="text"
-            name="surname1"
+            name="surname"
             id=""
             placeholder="Cognome"
             required
@@ -104,20 +109,7 @@ const Home = () => {
           <label htmlFor="">Allergie/Intolleranze</label>
           <input
             type="text"
-            name="allergies1"
-            id=""
-            placeholder="Allergie/Intolleranze"
-          />
-
-          <h2>Invitato #2</h2>
-          <label htmlFor="">Nome</label>
-          <input type="text" name="name2" id="" placeholder="Nome" />
-          <label htmlFor="">Cognome</label>
-          <input type="text" name="surname2" id="" placeholder="Cognome" />
-          <label htmlFor="">Allergie/Intolleranze</label>
-          <input
-            type="text"
-            name="allergies2"
+            name="allergies"
             id=""
             placeholder="Allergie/Intolleranze"
           />
@@ -126,6 +118,32 @@ const Home = () => {
         </form>
       </div>
 
+
+        {/* INFO SECTION */}
+      <div className="info">
+        <h1 id="info">INFO</h1>
+        <h3>Wedding Day</h3>
+
+        <div className="info-container">
+          <div className="info-card">
+            <h2>Chiesa dell'Ascensione a Chiaia</h2>
+            <p>Piazzetta dell'Ascensione, 15</p>
+            <p>Napoli</p>
+            <p>Ore 16:00</p>
+          </div>
+          <div className="info-card">
+            <h2>Noah Mediterranean Beach</h2>
+            <p>Via Sibilia, Lido di Licola</p>
+            <p>Ore 18:30</p>
+            <Link
+              to="https://www.google.co.uk/maps/place/Noah+Mediterranean+Beach/@40.8661444,14.0420386,16.5z/data=!4m6!3m5!1s0x133b11d6f0973777:0x784f719209d34361!8m2!3d40.866337!4d14.0452846!16s%2Fg%2F11j_yzgt_q?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+              target="_blank"
+            >
+              <button>Avvia Navigazione</button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </Router>
   );
 };
