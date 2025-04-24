@@ -259,7 +259,7 @@ svg {
 /* Info */
 
 .info {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,13 +271,13 @@ svg {
   font-size: 60px;
   margin: 5% 0 0 0;
   font-family: "Caprasimo", cursive;
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .info h3 {
   font-size: 35px;
   font-family: "Caprasimo", cursive;
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .info p {
@@ -296,7 +296,7 @@ svg {
 }
 
 .info-card {
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   width: 30%;
   height: 400px;
   margin: 2%;
@@ -304,7 +304,7 @@ svg {
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   font-family: "Roboto", sans-serif;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   text-align: center;
 }
 
@@ -314,8 +314,8 @@ svg {
 }
 
 .info-card button {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   border: none;
   padding: 10px 20px;
   font-size: 18px;
@@ -324,10 +324,62 @@ svg {
   margin-top: 10%;
 }
 .info-card button:hover {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  border: 1px solid var(--color-secondary);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   cursor: pointer;
+}
+
+/* Gift */
+
+.gift {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.gift h1 {
+  font-size: 60px;
+  margin: 5% 0;
+  font-family: "Caprasimo", cursive;
+  color: var(--color-secondary);
+}
+
+.gift p {
+  font-size: 22px;
+  text-align: center;
+  font-family: "Caprasimo", cursive;
+  color: var(--color-secondary);
+  margin: 2% 0 0 0;
+}
+
+.gift-card {
+  background-color: var(--color-secondary);
+  width: 30%;
+  height: 500px;
+  margin: 3%;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-primary);
+  text-align: left;
+}
+
+.gift-card h2 {
+  font-size: 25px;
+  margin: 5% 0;
+}
+
+.gift-card p {
+  font-size: 18px;
+  margin: 5% 0;
+  color: var(--color-primary);
+  font-family: "Roboto", sans-serif;
+  text-align: left;
 }
 
 /* Media Queries */

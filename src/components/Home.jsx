@@ -53,7 +53,7 @@ const Home = () => {
                 <Link to="#info" scroll={(el) => scrollWithOffset(el)}>
                   Info
                 </Link>
-                <Link to="/">Regalo</Link>
+                <Link to="#gift" scroll={(el) => scrollWithOffset(el)}>Regalo</Link>
               </div>
             </div>
           </div>
@@ -139,11 +139,34 @@ const Home = () => {
               to="https://www.google.co.uk/maps/place/Noah+Mediterranean+Beach/@40.8661444,14.0420386,16.5z/data=!4m6!3m5!1s0x133b11d6f0973777:0x784f719209d34361!8m2!3d40.866337!4d14.0452846!16s%2Fg%2F11j_yzgt_q?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
               target="_blank"
             >
-              <button>Avvia Navigazione</button>
+              <button>Avvia Navigazione &#129157;</button>
             </Link>
           </div>
         </div>
       </div>
+
+      {/* REGALO */}
+
+      <div className="gift">
+        <h1 id="gift">REGALO DI NOZZE</h1>
+
+        <p>Qui inizia la nostra vita insieme.</p>
+        <p>Se volete contribuire alla nostra avventura, trovate tutto qui.</p>
+
+        <div className="gift-card">
+            <h2>INTESTATARIO</h2>
+            <p>Morelli Matteo, Manno Alessandra</p>
+            <h2>BANCA</h2>
+            <p>Banco BPM</p>
+            <h2>IBAN</h2>
+            <p>IT17I0503401753000000164948</p>
+            <h2>BIC/SWIFT</h2>
+            <p>BAPPIT21A88</p>
+          </div>
+
+      </div>
+
+
     </Router>
   );
 };
