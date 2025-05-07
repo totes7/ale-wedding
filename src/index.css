@@ -242,7 +242,7 @@ svg {
 .contact-form > input[type="submit"] {
   width: 40%;
   margin: 5%;
-  padding: 1%;
+  padding: 2%;
   font-size: 24px;
   border-radius: 5px;
   font-family: "Caprasimo", cursive;
@@ -572,6 +572,17 @@ svg {
     width: 80%;
     margin: 15% 5%;
     padding: 20px;
+  }
+
+  .contact-form > input[type="submit"] {
+    width: 45%;
+    margin: 5%;
+    padding: 5%;
+    font-size: 22px;
+    border-radius: 5px;
+    font-family: "Caprasimo", cursive;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
   }
 
   .info-container {
