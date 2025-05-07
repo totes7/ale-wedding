@@ -80,7 +80,7 @@ const Home = () => {
               <p>Napoli</p>
               <h2 className="text-c">ORE 16:00</h2>
               <p className="bold">Noah Mediterranean Beach</p>
-              <p>Via Sibilia, Lido di Licola</p>
+              <p>Viale Sibilia 12A, Lido di Licola</p>
             </div>
           </div>
         </div>
@@ -133,13 +133,13 @@ const Home = () => {
           </div>
           <div className="info-card">
             <h2>Noah Mediterranean Beach</h2>
-            <p>Via Sibilia, Lido di Licola</p>
+            <p>Viale Sibilia 12A, Lido di Licola</p>
             <p>Ore 18:30</p>
             <Link
               to="https://www.google.co.uk/maps/place/Noah+Mediterranean+Beach/@40.8661444,14.0420386,16.5z/data=!4m6!3m5!1s0x133b11d6f0973777:0x784f719209d34361!8m2!3d40.866337!4d14.0452846!16s%2Fg%2F11j_yzgt_q?entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
               target="_blank"
             >
-              <button>Avvia Navigazione &#129157;</button>
+              <button>Avvia Navigazione <i class="fa-solid fa-location-dot"></i></button>
             </Link>
           </div>
         </div>

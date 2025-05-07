@@ -526,19 +526,19 @@ svg {
   }
 
   .overlay-content h1 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 35%;
   }
   
   .overlay-content h2 {
     margin: 15% 0 5%;
-    font-size: 22px;
+    font-size: 20px;
   }
   
   .overlay-content p {
     font-family: "Roboto", sans-serif;
     margin-top: 5%;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
   }
 
@@ -636,13 +636,13 @@ svg {
 
 @media (max-width: 400px) {
     .overlay-content h1 {
-        font-size: 24px;
-        margin-bottom: 30%;
+        font-size: 22px;
+        margin-bottom: 35%;
       }
       
       .overlay-content h2 {
         margin: 15% 0 5%;
-        font-size: 20px;
+        font-size: 18px;
       }
       
       .overlay-content p {
